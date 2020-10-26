@@ -17,7 +17,7 @@ public class OpenAssistantBotApplication implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
-        TelegramBot bot = new TelegramBot("");
+        TelegramBot bot = new TelegramBot("enter torken telegram"); // here need write code telegram
 
         bot.setUpdatesListener(updates -> {
             updates.forEach(System.out::println);
